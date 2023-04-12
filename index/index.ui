@@ -23,17 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="textBrowser">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>220</y>
-     <width>256</width>
-     <height>192</height>
-    </rect>
+    <string>域名搜集</string>
    </property>
   </widget>
  </widget>

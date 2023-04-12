@@ -6,14 +6,16 @@
 
 #include "ip_collect.h"
 #include "ui_ip_collect.h"
+#include "QTabWidget"
 
 
 ip_collect::ip_collect(QWidget *parent) :
         QWidget(parent), ui(new Ui::ip_collect) {
     ui->setupUi(this);
     //设置行、列数
-    ui->tableView->setLineWidth(5);
-    ui->tableView->setAccessibleName("1");
+    QTabWidget *tab = new QTabWidget();
+    tab->insertTab(0,ui->tableWidget,"hah");
+
 }
 
 ip_collect::~ip_collect() {

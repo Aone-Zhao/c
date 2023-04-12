@@ -11,6 +11,8 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/Login
         ${PROJECT_SOURCE_DIR}/MainWindow
         ${PROJECT_SOURCE_DIR}/index
+        ${PROJECT_SOURCE_DIR}/Collect
+
 )
 
 find_package(Qt6 COMPONENTS
@@ -29,7 +31,11 @@ add_executable(ZH
         Login/login.h
         index/index.cpp
         index/index.h
-        index/index.ui)
+        index/index.ui
+        Collect/ip_collect/ip_collect.cpp
+        Collect/ip_collect/ip_collect.h
+        Collect/ip_collect/ip_collect.ui
+        )
 target_link_libraries(ZH
         Qt::Core
         Qt::Gui
