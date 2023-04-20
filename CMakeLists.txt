@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
+link_libraries(ws_32)
 
 set(CMAKE_PREFIX_PATH "G:/Sytem64/QT/6.4.2/mingw_64")
 include_directories(
@@ -35,7 +36,7 @@ add_executable(ZH
         Collect/ip_collect/ip_collect.cpp
         Collect/ip_collect/ip_collect.h
         Collect/ip_collect/ip_collect.ui
-        )
+        ip_GET.cpp ip_GET.h)
 target_link_libraries(ZH
         Qt::Core
         Qt::Gui

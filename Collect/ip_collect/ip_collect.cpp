@@ -13,8 +13,6 @@ ip_collect::ip_collect(QWidget *parent) :
         QWidget(parent), ui(new Ui::ip_collect) {
     ui->setupUi(this);
     //设置行、列数
-    QTabWidget *tab = new QTabWidget();
-    tab->insertTab(0,ui->tableWidget,"hah");
 
 }
 
